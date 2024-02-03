@@ -52,7 +52,7 @@ const EditBlog = ({ params }: { params: { id: string } }) => {
         console.log(err);
         toast.error("Error fetching blog", { id: "1" });
       });
-  }, []);
+  }, [params.id]);
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
